@@ -1,0 +1,45 @@
+# Python virtual environments and caches
+.venv/
+venv/
+ENV/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+db.sqlite3
+
+# Local/Environment config files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Node/Frontend dependencies and build artifacts
+node_modules/
+.next/
+dist/
+build/
+out/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Streamlit config and caches
+.streamlit/
+new_format_jobright.tex
+howrecwork.png

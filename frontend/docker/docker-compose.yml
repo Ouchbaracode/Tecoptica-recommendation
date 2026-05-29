@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: pfe_gpu_db
+    restart: always
+    environment:
+      POSTGRES_USER: pfe_gpu
+      POSTGRES_PASSWORD: pfe_gpu
+      POSTGRES_DB: pfe_db 
+    ports:
+      - "5432:5432"
+    volumes:
+      - pfe_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  pfe_postgres_data:
